@@ -76,10 +76,3 @@
       - 'pyyaml'
     state: "present"
   when: not ansible_check_mode
-
-- name: install | Installing MAAS Python Module(s)
-  pip:
-    executable: pip3
-    name:
-      - 'python-libmaas'
-    state: "present"
