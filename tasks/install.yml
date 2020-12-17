@@ -1,4 +1,9 @@
 ---
+- name: install | Upgrade packages
+  apt:
+    state: "present"
+    upgrade: yes
+
 - name: install | Installing Pre-Reqs
   apt:
     name:
